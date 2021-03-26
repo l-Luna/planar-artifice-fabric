@@ -64,7 +64,7 @@ public class BlackHoleBombEntity extends Entity{
 					Vec3d end = new Vec3d(endX, endY, endZ);
 					BlockPos e = new BlockPos(endX, endY, endZ);
 					// If I'm too far, just skip
-					if(origin.distanceTo(end) > amnt / 6f)
+					if(origin.squaredDistanceTo(end) > (amnt / 6f) * (amnt / 6f))
 						continue;
 					// If this block can be reached from the centre, destroy it
 					float power = amnt;

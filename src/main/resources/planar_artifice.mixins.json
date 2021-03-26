@@ -11,8 +11,7 @@
     "ItemMixin",
     "LivingEntityMixin",
     "RenderPhaseAccessor",
-    "StatusEffectUtilMixin",
-    "WorldRendererMixin"
+    "StatusEffectUtilMixin"
   ],
   "client": [
   ],

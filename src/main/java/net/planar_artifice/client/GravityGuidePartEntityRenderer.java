@@ -7,9 +7,9 @@ import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Matrix4f;
 import net.planar_artifice.entities.GravityGuidePartEntity;
-import net.planar_artifice.mixin.RenderPhaseAccessor;
 
 import java.util.List;
 import java.util.Random;
@@ -22,7 +22,6 @@ public class GravityGuidePartEntityRenderer extends EntityRenderer<GravityGuideP
 	public static final Identifier RIFT_TEXTURE = planarId("textures/entity/rift.png");
 	
 	private static final List<RenderLayer> END_PORTAL_LAYERS = IntStream.range(0, 16).mapToObj((i) -> PlanarRenderLayer.getRift(i + 1)).collect(ImmutableList.toImmutableList());
-	private static final Random RANDOM = new Random(31100L);
 	
 	public GravityGuidePartEntityRenderer(EntityRenderDispatcher dispatcher){
 		super(dispatcher);
@@ -36,7 +35,6 @@ public class GravityGuidePartEntityRenderer extends EntityRenderer<GravityGuideP
 		// So let's start with this
 		// Just a cube
 		// And then we'll add fancy effects until it becomes a cool magic cube
-		RANDOM.setSeed(entity.age / 15);
 		double squaredDist = new BlockPos(entity.getPos()).getSquaredDistance(dispatcher.camera.getPos(), true);
 		int layers = layers(squaredDist);
 		matrices.push();
@@ -44,21 +42,18 @@ public class GravityGuidePartEntityRenderer extends EntityRenderer<GravityGuideP
 		Matrix4f model = matrices.peek().getModel();
 		
 		VertexConsumer layer = vertexConsumers.getBuffer(END_PORTAL_LAYERS.get(0));
-		cube(.25f, model, layer);
+		cube(entity, .1f, model, layer);
 		
-		for(int l = 1; l < layers; ++l){
-			RANDOM.setSeed(entity.age + l);
-			cube(2 / (float)(18 - l), model, vertexConsumers.getBuffer(END_PORTAL_LAYERS.get(l)));
-		}
+		for(int l = 1; l < layers; ++l)
+			cube(entity, 1f / (l + 1), model, vertexConsumers.getBuffer(END_PORTAL_LAYERS.get(l)));
 		
-		cube(1, model, vertexConsumers.getBuffer(RenderLayer.getOutline(getTexture(entity), RenderPhaseAccessor.getENABLE_CULLING())));
 		matrices.pop();
 	}
 	
-	private void cube(float brightness, Matrix4f model, VertexConsumer vertexConsumer){
-		float r = (RANDOM.nextFloat() * .7f + .2f) * brightness;
-		float g = (RANDOM.nextFloat() * .7f + .2f) * brightness;
-		float b = (RANDOM.nextFloat() * .7f + .2f) * brightness;
+	private void cube(GravityGuidePartEntity entity, float brightness, Matrix4f model, VertexConsumer vertexConsumer){
+		float r = MathHelper.abs((float)(Math.sin((float)Math.toRadians(entity.world.getTime())) * .7f * brightness + .2f));
+		float g = MathHelper.abs((float)(Math.sin((float)Math.toRadians(entity.world.getTime() + 360 / 3f)) * .7f * brightness + .2f));
+		float b = MathHelper.abs((float)(Math.sin((float)Math.toRadians(entity.world.getTime() + (360 * 2) / 3f)) * .7f * brightness + .2f));
 		quad(model, vertexConsumer, 0, 1, 0, 1, 1, 1, 1, 1, r, g, b);
 		quad(model, vertexConsumer, 0, 1, 1, 0, 0, 0, 0, 0, r, g, b);
 		quad(model, vertexConsumer, 1, 1, 1, 0, 0, 1, 1, 0, r, g, b);

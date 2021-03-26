@@ -22,8 +22,4 @@ public class PlanarRenderLayer{
 		
 		return RenderLayer.of("planar_artifice:rift", VertexFormats.POSITION_COLOR, 7, 256, false, true, RenderLayer.MultiPhaseParameters.builder().transparency(transparency2).texture(texture2).texturing(new RenderPhase.PortalTexturing(layer)).fog(RenderPhaseAccessor.getBLACK_FOG()).build(false));
 	}
-	
-	public static RenderLayer getPrismOutline(Identifier texture, RenderPhase.Cull cull){
-		return RenderLayer.of("planar_artifice:prism_outline", VertexFormats.POSITION_COLOR_TEXTURE, 7, 256, RenderLayer.MultiPhaseParameters.builder().texture(new RenderPhase.Texture(texture, false, false)).cull(cull).depthTest(RenderPhaseAccessor.getALWAYS_DEPTH_TEST()).alpha(RenderPhaseAccessor.getONE_TENTH_ALPHA()).texturing(RenderPhaseAccessor.getOUTLINE_TEXTURING()).fog(RenderPhaseAccessor.getNO_FOG()).target(PlanarWorldRenderer.PRISM_OUTLINE_BUFFER).build(RenderLayer.OutlineMode.IS_OUTLINE));
-	}
 }
