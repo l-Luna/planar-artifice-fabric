@@ -8,7 +8,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.RayTraceContext;
+import net.minecraft.world.RaycastContext;
 import net.minecraft.world.World;
 
 import java.util.Iterator;
@@ -85,7 +85,7 @@ public class RayTrace{
 		World world = from.world;
 		Vec3d loc = from.getCameraPosVec(1);
 		Vec3d toVec = loc.add(direction.x * maxDistance, direction.y * maxDistance, direction.z * maxDistance);
-		HitResult hitResult = world.rayTrace(new RayTraceContext(loc, toVec, RayTraceContext.ShapeType.OUTLINE, includeFluids ? RayTraceContext.FluidHandling.ANY : RayTraceContext.FluidHandling.NONE, from));
+		HitResult hitResult = world.raycast(new RaycastContext(loc, toVec, RaycastContext.ShapeType.OUTLINE, includeFluids ? RaycastContext.FluidHandling.ANY : RaycastContext.FluidHandling.NONE, from));
 		if(hitResult.getType() != HitResult.Type.MISS)
 			toVec = hitResult.getPos();
 		
@@ -100,9 +100,9 @@ public class RayTrace{
 		double d = Double.MAX_VALUE;
 		Entity entity2 = null;
 		
-		for(Entity entity3 : world.getEntities(entity, new Box(pos, to))){
+		for(Entity entity3 : world.getOtherEntities(entity, new Box(pos, to))){
 			Box box2 = entity3.getBoundingBox().expand(0.3);
-			Optional<Vec3d> optional = box2.rayTrace(pos, to);
+			Optional<Vec3d> optional = box2.raycast(pos, to);
 			if(optional.isPresent()){
 				double e = pos.squaredDistanceTo(optional.get());
 				if(e < d){
