@@ -1,0 +1,22 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "net.planar_artifice.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "AbstractInventoryScreenMixin",
+    "BeaconBlockEntityMixin",
+    "BeaconBlockEntityRendererMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "ItemMixin",
+    "LivingEntityMixin",
+    "RenderPhaseAccessor",
+    "StatusEffectUtilMixin",
+    "WorldRendererMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

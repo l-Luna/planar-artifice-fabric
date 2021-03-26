@@ -1,0 +1,53 @@
+{
+  "itemGroup.planar_artifice.items": "Planar Artifice",
+
+  "item.planar_artifice.dimensional_curiosity": "Dimensional Curiosity",
+  "item.planar_artifice.dimensional_singularity": "Dimensional Singularity",
+  "item.planar_artifice.effervescent_metal_ingot": "Effervescent Metal Ingot",
+  "item.planar_artifice.glass_globe": "Glass Globe",
+
+  "item.planar_artifice.rock_feather": "Rock Feather",
+
+  "item.planar_artifice.book_of_planes": "Book of Planes",
+  "item.planar_artifice.snow_globe": "Snow Globe",
+
+  "item.planar_artifice.gilded_helmet": "Gilded Helmet",
+  "item.planar_artifice.gilded_chestplate": "Gilded Chestpiece",
+  "item.planar_artifice.gilded_leggings": "Gilded Leggings",
+  "item.planar_artifice.gilded_boots": "Gilded Boots",
+
+  "item.planar_artifice.black_hole_bomb": "Black Hole Bomb",
+  "item.planar_artifice.remote_gateway": "Remote Gateway",
+  "item.planar_artifice.projector_drill": "Projector Drill",
+  "item.planar_artifice.void_drill": "Void Drill",
+  "item.planar_artifice.void_chainsaw": "Void Chainsaw",
+  "item.planar_artifice.gravity_globe": "Gravity Globe",
+  "item.planar_artifice.warp_globe": "Warp Globe",
+  "item.planar_artifice.looking_glass": "Looking Glass",
+  "item.planar_artifice.mirrored_amulet": "Mirrored Amulet",
+  "item.planar_artifice.north_star": "North Star",
+  "item.planar_artifice.jet_harness": "Charged Jet Harness",
+  "item.planar_artifice.barrier_platform": "Barrier Platform",
+  "item.planar_artifice.waterproof_barrier_platform": "Waterproof Barrier Platform",
+  "item.planar_artifice.lavaproof_barrier_platform": "Lavaproof Barrier Platform",
+  "item.planar_artifice.gravity_guide": "Gravity Guide",
+  "item.planar_artifice.lunar_flare": "Lunar Flare",
+
+  "block.planar_artifice.aura_basin": "Aura Basin",
+
+  "effect.planar_artifice.ethereal": "Ethereal",
+  "effect.planar_artifice.gilded_aura": "Gilded Aura",
+  "effect.planar_artifice.set_bonus": "Set Bonus",
+
+  "entity.planar_artifice.black_hole_bomb_entity": "Black Hole Bomb",
+  "entity.planar_artifice.gravity_guide_part": "Guide Gravity",
+
+  "item.planar_artifice.void_drill.mode.0": "Mode: Single Block",
+  "item.planar_artifice.void_drill.mode.1": "Mode: 3x3 Square",
+  "item.planar_artifice.void_drill.mode.2": "Mode: 3x3x3 Cube",
+  "item.planar_artifice.void_drill.mode.3": "Invalid Mode",
+
+  "item.planar_artifice.charge_level": "Charge: %s",
+
+  "trinkets.slot.legs.barrierplatform": "Barrier Platform"
+}

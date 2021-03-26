@@ -1,0 +1,20 @@
+{
+  "name": "Mirrored Amulet",
+  "icon": "planar_artifice:mirrored_amulet",
+  "category": "planar_artifice:basics",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(bold)Mirrored Amulet$() solves the problem of inventory space, by providing access to remote storage on-the-go. Simply link it to a chest, or any other inventory by sneak-right-clicking, and equip. An additional set of inventory slots will appear in your inventory screen, corresponding to those slots in the inventory, which could be part of a storage system."
+    },
+    {
+      "type": "text",
+      "text": "You can take this one step further, by enchanting it with $(bold)Pessimist's Will$(). An enchanted amulet will send the user's items to the linked inventory upon their death - except for the amulet, which is left behind."
+    },
+    {
+      "type": "crafting",
+      "recipe": "planar_artifice:mirrored_amulet",
+      "text": "What's mine is mine."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+accessWidener v1 named
+
+accessible method net/minecraft/client/render/OutlineVertexConsumerProvider$OutlineVertexConsumer <init> (Lnet/minecraft/client/render/VertexConsumer;IIII)V
+accessible class net/minecraft/client/render/OutlineVertexConsumerProvider$OutlineVertexConsumer
+accessible class net/minecraft/client/render/RenderLayer$OutlineMode

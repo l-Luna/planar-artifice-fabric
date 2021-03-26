@@ -1,0 +1,8 @@
+{
+  "type": "planar_artifice:charging",
+  "ingredient": {
+    "item": "planar_artifice:dimensional_curiosity"
+  },
+  "result": "planar_artifice:dimensional_singularity",
+  "charge": 3000
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "planar_artifice:dimensional_curiosity"
+    }
+  ],
+  "result": {
+    "item": "planar_artifice:book_of_planes"
+  }
+}

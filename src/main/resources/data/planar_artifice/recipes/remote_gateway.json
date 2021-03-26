@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "*  ",
+    " ~ ",
+    "  #"
+  ],
+  "key": {
+    "*": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "~": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "#": {
+      "item": "planar_artifice:dimensional_singularity"
+    }
+  },
+  "result": {
+    "item": "planar_artifice:remote_gateway"
+  }
+}

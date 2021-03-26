@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "*h ",
+    "p~#",
+    " ##"
+  ],
+  "key": {
+    "*": {
+      "item": "minecraft:ender_pearl"
+    },
+    "#": {
+      "item": "planar_artifice:effervescent_metal_ingot"
+    },
+    "~": {
+      "item": "planar_artifice:dimensional_singularity"
+    },
+    "p": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "h": {
+      "item": "minecraft:diamond_hoe"
+    }
+  },
+  "result": {
+    "item": "planar_artifice:void_drill"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#X",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:gold_ingot"
+    },
+    "#": {
+      "item": "planar_artifice:effervescent_metal_ingot"
+    }
+  },
+  "result": {
+    "item": "planar_artifice:gilded_leggings"
+  }
+}

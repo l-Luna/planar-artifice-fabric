@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "planar_artifice",
+  "version": "0.1.0",
+
+  "name": "Planar Artifice",
+  "description": "Manipulate space and time.",
+  "authors": [
+    "(Me.)"
+  ],
+
+  "license": "CC0-1.0",
+
+  "accessWidener": "planar_artifice.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.planar_artifice.PlanarArtifice"
+    ],
+    "client": [
+      "net.planar_artifice.client.ClientInit"
+    ]
+  },
+  "mixins": [
+    "planar_artifice.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8",
+    "fabric": "*",
+    "minecraft": "1.16.1"
+  }
+}

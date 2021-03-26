@@ -1,0 +1,24 @@
+{
+  "name": "Dimensional Breaks",
+  "icon": "planar_artifice:dimensional_curiosity",
+  "category": "planar_artifice:info",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Occasionally, reality breaks down a little. An error here, some broken structures there... and a tear appears. These tears cause strange effects nearby, but are mostly too small to see; creating a tear big enough to see, let alone feel, requires a little prompting, such as by killing a powerful, energy filled monster."
+    },
+    {
+      "type": "text",
+      "text": "Disturbing one can yield a stable fragment (or as stable as an error can be): a Dimensional Curiosity. But you already did that. Being stable, Curiosities aren't incredibly useful as-is; they must be charged with energy to produce space-warping effects."
+    },
+    {
+      "type": "text",
+      "text": "The most basic way of doing this is harnessing the power of the aforementioned creature; a beacon produces a continuous stream of power suitable for use. An $(bold)Aura Basin$() can be placed above a beacon to collect its power. When an item is placed inside, the beacon beam is blocked and the item gains charge. Charging a Curiosity yields a Dimensional Singularity, which has a number of applications."
+    },
+    {
+      "type": "crafting",
+      "recipe": "planar_artifice:aura_basin",
+      "text": "The glass panes are lenses if you couldn't tell."
+    }
+  ]
+}

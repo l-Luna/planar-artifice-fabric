@@ -1,0 +1,17 @@
+{
+  "name": "Black Hole Bomb",
+  "icon": "planar_artifice:black_hole_bomb",
+  "category": "planar_artifice:basics",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(bold)Black Hole Bomb$() is a tool of destruction and clean mining. A thrown bomb will, upon coming into contact with solid matter, compress and become an unstable black hole. A large area of blocks will be sucked into the centre point and stored in an unstable, dense ball of mass, which falls apart after 20 seconds, or being hit."
+    },
+    {
+      "type": "crafting",
+      "recipe": "planar_artifice:black_hole_bomb_1",
+      "recipe2": "planar_artifice:black_hole_bomb_2",
+      "text": "Kurzgesagt would approve."
+    }
+  ]
+}

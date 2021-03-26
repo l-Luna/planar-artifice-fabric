@@ -1,0 +1,32 @@
+{
+  "parent": "planar_artifice:item/void_drill",
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -90,
+        25
+      ],
+      "translation": [
+        1.13,
+        3.2,
+        3.13
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        -25
+      ],
+      "translation": [
+        1.13,
+        3.2,
+        3.13
+      ]
+    }
+  },
+  "textures": {
+    "layer0": "planar_artifice:item/void_drill_active"
+  }
+}

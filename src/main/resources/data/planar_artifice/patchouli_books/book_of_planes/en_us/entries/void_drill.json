@@ -1,0 +1,21 @@
+{
+  "name": "Void Drill",
+  "icon": "planar_artifice:void_drill",
+  "category": "planar_artifice:basics",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(bold)Void Drill$() is a tool of simple destruction. When used, it will destroy any blocks you look at instantly (except for invincible ones, like bedrock, barriers, or moving pistons) - without dropping anything. Much better than lugging around 999 stacks of cobblestone."
+    },
+    {
+      "type": "text",
+      "text": "The drill has several modes, which can be switched between by sneak-right-clicking. By default, one block will be broken at a time; this can be increased to a 3x3 square or a 3x3x3 cube. Note that the cube is centred on the block behind the one you look at. (The drill will not break anything while sneaking.)"
+    },
+    {
+      "type": "crafting",
+      "recipe": "planar_artifice:void_drill_1",
+      "recipe2": "planar_artifice:void_drill_2",
+      "text": "Don't need a chainsaw."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Gravity Globe",
+  "icon": "planar_artifice:gravity_globe",
+  "category": "planar_artifice:basics",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(bold)Gravity Globe$() provides a way to get off the ground in a (hopefully) controllable manner. When equipped and charged, you can flip gravity by double-tapping space, sending you upwards at a high speed. A similar effect is applied to mobs and items by a dispenser. Equipping a gravity globe also negates all fall damage, regardless of whether it has charge."
+    },
+    {
+      "type": "text",
+      "text": "More precise control over your ascent can be achieved by building Tethers - a relatively simple multiblock structure. While in the vicinity of one, double-tapping space instead gives you much more familiar flight, suitable for building or moving around your home quickly. Tethers can be supplied with potions of slow falling or levitation to reduce charge consumption, so long as you have a direct line of sight to the tether."
+    },
+    {
+      "type": "crafting",
+      "recipe": "planar_artifice:gravity_globe",
+      "text": "I swear I know this from somewhere."
+    }
+  ]
+}

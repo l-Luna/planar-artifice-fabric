@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "*O*",
+    "O O",
+    "* *"
+  ],
+  "key": {
+    "*": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "O": {
+      "tag": "planar_artifice:glass_panes"
+    }
+  },
+  "result": {
+    "item": "planar_artifice:aura_basin"
+  }
+}

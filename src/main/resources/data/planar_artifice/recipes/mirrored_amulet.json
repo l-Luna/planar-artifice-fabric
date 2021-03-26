@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "csb",
+    "#g#",
+    "h~e"
+  ],
+  "key": {
+    "#": {
+      "item": "planar_artifice:effervescent_metal_ingot"
+    },
+    "~": {
+      "item": "planar_artifice:dimensional_singularity"
+    },
+    "g": {
+      "tag": "planar_artifice:glass_panes"
+    },
+    "c": {
+      "item": "minecraft:chest"
+    },
+    "b": {
+      "item": "minecraft:barrel"
+    },
+    "h": {
+      "item": "minecraft:hopper"
+    },
+    "s": {
+      "tag": "planar_artifice:shulker_boxes"
+    },
+    "e": {
+      "item": "minecraft:ender_chest"
+    }
+  },
+  "result": {
+    "item": "planar_artifice:mirrored_amulet"
+  }
+}

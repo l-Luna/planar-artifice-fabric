@@ -1,0 +1,11 @@
+{
+  "name": "Effervescent Metal",
+  "icon": "planar_artifice:effervescent_metal_ingot",
+  "category": "planar_artifice:info",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Mundane materials are ill-suited for containing or channel high levels or power, or guiding the warping of space."
+    }
+  ]
+}

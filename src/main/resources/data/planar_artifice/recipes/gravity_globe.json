@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " p ",
+    "p+p",
+    "#~#"
+  ],
+  "key": {
+    "#": {
+      "item": "planar_artifice:effervescent_metal_ingot"
+    },
+    "~": {
+      "item": "planar_artifice:dimensional_singularity"
+    },
+    "p": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "+": {
+      "item": "planar_artifice:glass_globe"
+    }
+  },
+  "result": {
+    "item": "planar_artifice:gravity_globe"
+  }
+}
