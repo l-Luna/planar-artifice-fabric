@@ -35,6 +35,9 @@
 
   "block.planar_artifice.aura_basin": "Aura Basin",
 
+  "block.planar_artifice.moonstone": "Moonstone",
+  "block.planar_artifice.shattered_moonstone": "Shattered Moonstone",
+
   "effect.planar_artifice.ethereal": "Ethereal",
   "effect.planar_artifice.gilded_aura": "Gilded Aura",
   "effect.planar_artifice.set_bonus": "Set Bonus",

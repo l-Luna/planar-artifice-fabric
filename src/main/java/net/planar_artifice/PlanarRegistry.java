@@ -3,6 +3,7 @@ package net.planar_artifice;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.MaterialColor;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.*;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -93,6 +94,10 @@ public class PlanarRegistry{
 	// Blocks
 	public static final Block AURA_BASIN = new AuraBasinBlock(of(Material.METAL).breakByHand(true).strength(6f).nonOpaque().solidBlock((state, world, pos) -> false));
 	
+	// Moon blocks
+	public static final Block MOONSTONE = new Block(of(Material.STONE, MaterialColor.QUARTZ).requiresTool().strength(1.5f, 6));
+	public static final Block SHATTERED_MOONSTONE = new Block(of(Material.STONE, MaterialColor.QUARTZ).requiresTool().strength(2, 6));
+	
 	// Status effects
 	public static final StatusEffect ETHEREAL = new SetBonusStatusEffect(0xFFFFFF);
 	public static final StatusEffect GILDED_SET = new SetBonusStatusEffect(0xFFFFFF)
@@ -152,6 +157,8 @@ public class PlanarRegistry{
 		
 		// Blocks and BlockItems
 		WITH_ITEMS.add(new Pair<>(planarId("aura_basin"), AURA_BASIN));
+		WITH_ITEMS.add(new Pair<>(planarId("moonstone"), MOONSTONE));
+		WITH_ITEMS.add(new Pair<>(planarId("shattered_moonstone"), SHATTERED_MOONSTONE));
 		
 		for(Pair<Identifier, Block> item : WITH_ITEMS){
 			register(Registry.BLOCK, item.getLeft(), item.getRight());
